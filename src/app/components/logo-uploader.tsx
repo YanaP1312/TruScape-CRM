@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import Image from 'next/image';
 
 export interface LogoUploaderProps
@@ -25,7 +24,7 @@ export default function LogoUploader({
           className="mb-1"
           width={48}
           height={48}
-          src="cloud-arrow-down.svg"
+          src="/icons/cloud-arrow-down.svg"
           alt="upload"
         />
         {placeholder && (

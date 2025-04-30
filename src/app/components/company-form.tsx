@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import { Form, Formik } from 'formik';
 import LogoUploader from './logo-uploader';
 import InputField from './input-field';

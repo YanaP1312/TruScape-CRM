@@ -3,7 +3,7 @@ import CompanyRow from '../components/company-row';
 import CompanyTable from '../components/company-table';
 import Header from '../components/header';
 import SearchInput from '../components/search-input';
-import { Status } from '../components/statusLabel';
+import { Status } from '../components/status-label';
 import Toolbar from '../components/toolbar';
 
 export interface PageProps {}

@@ -6,9 +6,7 @@ import SearchInput from '../components/search-input';
 import { Status } from '../components/status-label';
 import Toolbar from '../components/toolbar';
 
-export interface PageProps {}
-
-export default function Page({}: PageProps) {
+export default function Page() {
   return (
     <>
       <Header>Companies</Header>

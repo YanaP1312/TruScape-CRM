@@ -1,7 +1,11 @@
 import Header from '@/app/components/header';
 import React from 'react';
 
-export default function Page({ params }: { params: { id: string } }) {
+export interface PageProps {
+  params: { id: string };
+}
+
+export default function Page({ params }: PageProps) {
   return (
     <>
       <Header>Company ({params.id})</Header>

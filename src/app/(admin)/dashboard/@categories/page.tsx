@@ -1,5 +1,5 @@
 import DashboardCard from '@/app/components/dashboard-card';
-import StatCard, { StatCardType } from '@/app/components/stat-card/stat-card';
+import StatCard, { StatCardType } from '@/app/components/stat-card';
 import { getSummaryCategories } from '@/lib/api';
 
 export interface PageProps {}

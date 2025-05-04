@@ -1,4 +1,4 @@
-import StatCard, { StatCardType } from '@/app/components/stat-card/stat-card';
+import StatCard, { StatCardType } from '@/app/components/stat-card';
 import { getSummaryStats } from '@/lib/api';
 
 export interface PageProps {}
@@ -14,7 +14,7 @@ export default async function Page({}: PageProps) {
   const data = await getSummaryStats();
 
   return (
-    <div>
+    <div className="grid grid-cols-12 gap-5">
       {(Object.keys(labelByStat) as (keyof typeof data)[]).map((key) => (
         <div key={key} className="col-span-3">
           <StatCard

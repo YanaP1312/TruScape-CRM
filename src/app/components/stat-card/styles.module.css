@@ -7,13 +7,13 @@
 }
 
 .gradient:nth-child(4n + 2) {
-  background-color: url('/images/gradient-2.svg');
+  background-image: url('/images/gradient-2.svg');
 }
 
 .gradient:nth-child(4n + 3) {
-  background-color: url('/images/gradient-3.svg');
+  background-image: url('/images/gradient-3.svg');
 }
 
 .gradient:nth-child(4n + 4) {
-  background-color: url('/images/gradient-4.svg');
+  background-image: url('/images/gradient-4.svg');
 }

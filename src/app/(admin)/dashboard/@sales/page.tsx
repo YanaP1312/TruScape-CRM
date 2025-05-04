@@ -14,8 +14,8 @@ export default async function Page({}: PageProps) {
         headers={
           <>
             <SummaryTableHeader>Company</SummaryTableHeader>
-            <SummaryTableHeader>Sold</SummaryTableHeader>
-            <SummaryTableHeader>Income</SummaryTableHeader>
+            <SummaryTableHeader align="center">Sold</SummaryTableHeader>
+            <SummaryTableHeader align="center">Income</SummaryTableHeader>
           </>
         }
       >

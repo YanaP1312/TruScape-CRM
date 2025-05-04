@@ -10,8 +10,8 @@ export default async function Page({}: PageProps) {
 
   return (
     <DashboardCard label="Countries of companies">
-      <div className="flex items-end pb-5 px-5 gap-2">
-        <div>
+      <div className="flex justify-between items-end pb-5 px-5 gap-4 h-[262px]">
+        <div className="self-end">
           {data.map(({ countryId, countryTitle, count }) => (
             <p
               key={countryId}
@@ -24,7 +24,7 @@ export default async function Page({}: PageProps) {
         </div>
         <Image
           width={395}
-          height={260}
+          height={262}
           src="/images/map.svg"
           alt="world's map"
         />

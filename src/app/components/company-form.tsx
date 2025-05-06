@@ -111,13 +111,7 @@ export default function CompanyForm({ onSubmit }: CompanyFormProps) {
             </InputField>
           </div>
           <div className="flex flex-col flex-1 gap-5">
-            <InputField
-              required
-              label="Name"
-              placeholder="Name"
-              name="title"
-              as
-            />
+            <InputField required label="Name" placeholder="Name" name="title" />
             <InputField
               required
               label="Category"
@@ -136,14 +130,12 @@ export default function CompanyForm({ onSubmit }: CompanyFormProps) {
               label="Joined date"
               type="date"
               name="joinedDate"
-              as
             />
             <InputField
               required
               label="Description"
               placeholder="Description"
               name="description"
-              as
             />
           </div>
         </div>

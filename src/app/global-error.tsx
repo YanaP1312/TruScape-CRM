@@ -1,8 +1,6 @@
 'use client';
 
-export interface GlobalErrorProps {}
-
-export default function GlobalError({}: GlobalErrorProps) {
+export default function GlobalError() {
   return (
     <html>
       <body>

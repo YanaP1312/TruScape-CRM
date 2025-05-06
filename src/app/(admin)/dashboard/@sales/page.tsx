@@ -4,9 +4,7 @@ import SummaryTableCell from '@/app/components/summary-table-cell';
 import SummaryTableHeader from '@/app/components/summary-table-header';
 import { getSummarySales } from '@/lib/api';
 
-export interface PageProps {}
-
-export default async function Page({}: PageProps) {
+export default async function Page() {
   const data = await getSummarySales();
   return (
     <DashboardCard label="Sales details">

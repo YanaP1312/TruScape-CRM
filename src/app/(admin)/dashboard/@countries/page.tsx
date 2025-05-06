@@ -4,9 +4,7 @@ import getCountById from '@/lib/utils/getCountById';
 import clsx from 'clsx';
 import Image from 'next/image';
 
-export interface PageProps {}
-
-export default async function Page({}: PageProps) {
+export default async function Page() {
   const countries = await getCountries();
   const companies = await getCompanies();
   const counts = getCountById(companies, 'countryId');

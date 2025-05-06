@@ -4,9 +4,7 @@ import React from 'react';
 import { getCompanies } from '@/lib/api';
 import { HydrationBoundary, dehydrate } from '@tanstack/react-query';
 
-export interface PageProps {}
-
-export default async function Page({}: PageProps) {
+export default async function Page() {
   const queryClient = getQueryClient();
 
   await queryClient.prefetchQuery({

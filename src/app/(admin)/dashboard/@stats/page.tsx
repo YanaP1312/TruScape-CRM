@@ -1,8 +1,6 @@
 import StatCard, { StatCardType } from '@/app/components/stat-card';
 import { SummaryStats, getSummaryStats } from '@/lib/api';
 
-export interface PageProps {}
-
 const labelByStat: Record<keyof SummaryStats, string> = {
   promotion: 'Total promotions',
   categories: 'Total categories',
@@ -10,7 +8,7 @@ const labelByStat: Record<keyof SummaryStats, string> = {
   activeCompanies: 'Total active companies',
 };
 
-export default async function Page({}: PageProps) {
+export default async function Page() {
   const data = await getSummaryStats();
 
   return (

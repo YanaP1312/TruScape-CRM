@@ -3,9 +3,7 @@ import StatCard, { StatCardType } from '@/app/components/stat-card';
 import { getCategories, getCompanies } from '@/lib/api';
 import getCountById from '@/lib/utils/getCountById';
 
-export interface PageProps {}
-
-export default async function Page({}: PageProps) {
+export default async function Page() {
   const categories = await getCategories();
   const companies = await getCompanies();
 
